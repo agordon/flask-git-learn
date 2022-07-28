@@ -4,6 +4,7 @@ from wtforms import StringField,IntegerField, SubmitField ## NEW
 from wtforms.validators import DataRequired,NumberRange ## NEW
 from flask_bootstrap import Bootstrap
 from pprint import pprint
+from random import randint
 
 app = Flask(__name__)
 app.config["WTF_CSRF_ENABLED"] = False
