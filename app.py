@@ -23,7 +23,7 @@ class MyForm(FlaskForm):
     number = IntegerField('Choose a number:')
     go = SubmitField()
 
-@app.route("/form-test",methods=["GET","POST"])
+@app.route("/form-test777",methods=["GET","POST"])
 def form_test():
     form = MyForm()
     if form.is_submitted():
