@@ -1,5 +1,6 @@
 from flask import Flask,render_template,request
-from flask_wtf import FlaskForm ## NEW
+from flask_wtf import FlaskForm
+from sqlalchemy import Integer ## NEW
 from wtforms import StringField,IntegerField, SubmitField ## NEW
 from wtforms.validators import DataRequired,NumberRange ## NEW
 from flask_bootstrap import Bootstrap
@@ -20,6 +21,7 @@ def boots2():
 class MyForm(FlaskForm):
     name = StringField('name', validators=[DataRequired()])
     age = IntegerField('age', validators=[DataRequired(), NumberRange(13,115)])
+    grade = IntegerField('grade', validators=[DataRequired()])
     number = IntegerField('Choose a number:')
     go = SubmitField()
 
