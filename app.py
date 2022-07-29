@@ -19,7 +19,7 @@ def boots2():
     return render_template("boots2.html")
 
 class MyForm(FlaskForm):
-    name = StringField('name', validators=[DataRequired()])
+    names = StringField('name', validators=[DataRequired()])
     age = IntegerField('age', validators=[DataRequired(), NumberRange(13,115)])
     number = IntegerField('Choose a number:')
     go = SubmitField()
