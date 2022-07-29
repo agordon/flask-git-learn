@@ -13,7 +13,7 @@ b = Bootstrap(app)
 @app.route("/")
 def boots1():
     return render_template("boots1.html")
-
+#hi
 @app.route("/boots2")
 def boots2():
     return render_template("boots2.html")
